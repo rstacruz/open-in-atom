@@ -3,8 +3,7 @@
   "main": "./lib/open-in-atom",
   "version": "0.0.0",
   "description": "A short description of your package",
-  "keywords": [
-  ],
+  "keywords": [],
   "activationCommands": {
     "atom-workspace": "open-in-atom:toggle"
   },
@@ -13,6 +12,9 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "prettier-eslint": "^8.8.2",
+    "standard": "^11.0.1"
   }
 }

@@ -1,6 +1,6 @@
-'use babel';
+'use babel'
 
-import OpenInAtom from '../lib/open-in-atom';
+import OpenInAtom from '../lib/open-in-atom'
 
 // Use the command `window:run-package-specs` (cmd-alt-ctrl-p) to run specs.
 //
@@ -8,39 +8,39 @@ import OpenInAtom from '../lib/open-in-atom';
 // or `fdescribe`). Remove the `f` to unfocus the block.
 
 describe('OpenInAtom', () => {
-  let workspaceElement, activationPromise;
+  let workspaceElement, activationPromise
 
   beforeEach(() => {
-    workspaceElement = atom.views.getView(atom.workspace);
-    activationPromise = atom.packages.activatePackage('open-in-atom');
-  });
+    workspaceElement = atom.views.getView(atom.workspace)
+    activationPromise = atom.packages.activatePackage('open-in-atom')
+  })
 
   describe('when the open-in-atom:toggle event is triggered', () => {
     it('hides and shows the modal panel', () => {
       // Before the activation event the view is not on the DOM, and no panel
       // has been created
-      expect(workspaceElement.querySelector('.open-in-atom')).not.toExist();
+      expect(workspaceElement.querySelector('.open-in-atom')).not.toExist()
 
       // This is an activation event, triggering it will cause the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'open-in-atom:toggle');
+      atom.commands.dispatch(workspaceElement, 'open-in-atom:toggle')
 
       waitsForPromise(() => {
-        return activationPromise;
-      });
+        return activationPromise
+      })
 
       runs(() => {
-        expect(workspaceElement.querySelector('.open-in-atom')).toExist();
+        expect(workspaceElement.querySelector('.open-in-atom')).toExist()
 
-        let openInAtomElement = workspaceElement.querySelector('.open-in-atom');
-        expect(openInAtomElement).toExist();
+        let openInAtomElement = workspaceElement.querySelector('.open-in-atom')
+        expect(openInAtomElement).toExist()
 
-        let openInAtomPanel = atom.workspace.panelForItem(openInAtomElement);
-        expect(openInAtomPanel.isVisible()).toBe(true);
-        atom.commands.dispatch(workspaceElement, 'open-in-atom:toggle');
-        expect(openInAtomPanel.isVisible()).toBe(false);
-      });
-    });
+        let openInAtomPanel = atom.workspace.panelForItem(openInAtomElement)
+        expect(openInAtomPanel.isVisible()).toBe(true)
+        atom.commands.dispatch(workspaceElement, 'open-in-atom:toggle')
+        expect(openInAtomPanel.isVisible()).toBe(false)
+      })
+    })
 
     it('hides and shows the view', () => {
       // This test shows you an integration test testing at the view level.
@@ -49,25 +49,25 @@ describe('OpenInAtom', () => {
       // `toBeVisible()` matchers to work. Anything testing visibility or focus
       // requires that the workspaceElement is on the DOM. Tests that attach the
       // workspaceElement to the DOM are generally slower than those off DOM.
-      jasmine.attachToDOM(workspaceElement);
+      jasmine.attachToDOM(workspaceElement)
 
-      expect(workspaceElement.querySelector('.open-in-atom')).not.toExist();
+      expect(workspaceElement.querySelector('.open-in-atom')).not.toExist()
 
       // This is an activation event, triggering it causes the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'open-in-atom:toggle');
+      atom.commands.dispatch(workspaceElement, 'open-in-atom:toggle')
 
       waitsForPromise(() => {
-        return activationPromise;
-      });
+        return activationPromise
+      })
 
       runs(() => {
         // Now we can test for view visibility
-        let openInAtomElement = workspaceElement.querySelector('.open-in-atom');
-        expect(openInAtomElement).toBeVisible();
-        atom.commands.dispatch(workspaceElement, 'open-in-atom:toggle');
-        expect(openInAtomElement).not.toBeVisible();
-      });
-    });
-  });
-});
+        let openInAtomElement = workspaceElement.querySelector('.open-in-atom')
+        expect(openInAtomElement).toBeVisible()
+        atom.commands.dispatch(workspaceElement, 'open-in-atom:toggle')
+        expect(openInAtomElement).not.toBeVisible()
+      })
+    })
+  })
+})

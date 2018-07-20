@@ -16,5 +16,9 @@
   "devDependencies": {
     "prettier-eslint": "^8.8.2",
     "standard": "^11.0.1"
+  },
+  "scripts": {
+    "prettier:check": "prettier-eslint --list-different '{spec,lib}/**/*.js'",
+    "prettier:fix": "prettier-eslint --write '{spec,lib}/**/*.js'"
   }
 }

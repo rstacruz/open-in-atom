@@ -10,6 +10,7 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
+    "babel-eslint": "^8.2.6",
     "koa": "2.5.2",
     "koa-bodyparser": "^4.2.1"
   },

@@ -2,11 +2,8 @@
   "name": "open-in-atom",
   "main": "./lib/open-in-atom",
   "version": "0.0.0",
-  "description": "A short description of your package",
+  "description": "Open in Atom",
   "keywords": [],
-  "activationCommands": {
-    "atom-workspace": "open-in-atom:toggle"
-  },
   "repository": "https://github.com/atom/open-in-atom",
   "license": "MIT",
   "engines": {

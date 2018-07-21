@@ -10,7 +10,7 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
-    "babel-eslint": "^8.2.6", 
+    "babel-eslint": "^8.2.6",
     "koa": "2.5.2",
     "koa-bodyparser": "^4.2.1"
   },
@@ -19,6 +19,7 @@
     "standard": "^11.0.1"
   },
   "scripts": {
+    "lint": "eslint lib",
     "prettier:check": "prettier-eslint --list-different '{spec,lib}/**/*.js'",
     "prettier:fix": "prettier-eslint --write '{spec,lib}/**/*.js'"
   }

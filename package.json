@@ -2,7 +2,7 @@
   "name": "open-in-atom",
   "main": "./lib/open-in-atom",
   "version": "0.0.0",
-  "description": "Open in Atom",
+  "description": "Open a file in Atom from the terminal without lag",
   "keywords": [],
   "repository": "https://github.com/atom/open-in-atom",
   "license": "MIT",

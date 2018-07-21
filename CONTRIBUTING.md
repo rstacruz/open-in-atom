@@ -13,6 +13,9 @@ atom.open({
   newWindow: true
 })
 
+// Close all editors
+atom.workspace.getTextEditors().forEach(ed => ed.destroy())
+
 // Open a project
 atom.project.setPaths([ path ])
 

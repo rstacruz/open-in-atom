@@ -11,8 +11,11 @@
   },
   "dependencies": {
     "babel-eslint": "^8.2.6",
+    "cachedir": "2.0.0",
+    "get-port": "3.2.0",
     "koa": "2.5.2",
-    "koa-bodyparser": "^4.2.1"
+    "koa-bodyparser": "^4.2.1",
+    "thenify": "3.3.0"
   },
   "devDependencies": {
     "prettier-eslint-cli": "^4.7.1",

@@ -1,6 +1,6 @@
 {
   "name": "open-in-atom",
-  "main": "./lib/open-in-atom",
+  "main": "./lib/index",
   "version": "0.0.0",
   "description": "Open a file in Atom from the terminal without lag",
   "keywords": [],

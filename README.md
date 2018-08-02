@@ -17,10 +17,10 @@ yarn global add open-in-atom-cli
 
 > (Alternatively, you can just copy the shell script [`open-in-atom`](https://github.com/rstacruz/open-in-atom-cli/blob/master/bin/open-in-atom) to your PATH.)
 
-Then install the companion Atom package, [open-in-atom](https://atom.io/packages/open-in-atom):
+Then install the companion Atom package, [open-in-atom-pkg](https://atom.io/packages/open-in-atom-pkg):
 
 ```sh
-apm install open-in-atom
+apm install open-in-atom-pkg
 ```
 
 [open-in-atom-cli]: https://github.com/rstacruz/open-in-atom-cli
@@ -47,8 +47,6 @@ You can set atom-open as your EDITOR for some apps. Here it is working with [ran
 ![open-in-atom-ranger](https://user-images.githubusercontent.com/74385/43037857-c60eabe6-8d44-11e8-9254-23c29826b045.gif)
 
 [ranger]: https://github.com/ranger/ranger
-
-## Thanks
 
 ## Thanks
 

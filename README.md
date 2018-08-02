@@ -2,6 +2,8 @@
 
 > Open a file in Atom from the terminal without lag 🏎️
 
+This package lets you open files from the command line. Atom already lets you do this with their `atom` CLI helper, but this one is *freaking instantaneously fast*.
+
 ![open-in-atom](https://user-images.githubusercontent.com/74385/43037729-87aeccec-8d43-11e8-8509-b64115de0f91.gif)
 
 ## Installation

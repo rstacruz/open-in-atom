@@ -1,23 +1,42 @@
 {
   "name": "open-in-atom",
-  "main": "./lib/open-in-atom",
+  "description": "Open a file in Atom from the terminal without lag",
   "version": "0.0.0",
-  "description": "A short description of your package",
-  "keywords": [],
-  "activationCommands": {
-    "atom-workspace": "open-in-atom:toggle"
+  "author": "Rico Sta. Cruz <rstacruz@users.noreply.github.com>",
+  "bugs": {
+    "url": "https://github.com/rstacruz/open-in-atom/issues"
   },
-  "repository": "https://github.com/atom/open-in-atom",
-  "license": "MIT",
+  "dependencies": {
+    "babel-eslint": "^8.2.6",
+    "cachedir": "2.0.0",
+    "get-port": "3.2.0",
+    "koa": "2.5.2",
+    "koa-bodyparser": "^4.2.1",
+    "thenify": "3.3.0"
+  },
+  "devDependencies": {
+    "prettier-eslint-cli": "^4.7.1",
+    "standard": "^11.0.1"
+  },
+  "directories": {
+    "lib": "lib"
+  },
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {},
-  "devDependencies": {
-    "prettier-eslint": "^8.8.2",
-    "standard": "^11.0.1"
+  "homepage": "https://github.com/rstacruz/open-in-atom#readme",
+  "keywords": [
+    "atom",
+    "cli"
+  ],
+  "license": "MIT",
+  "main": "./lib/index",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rstacruz/open-in-atom.git"
   },
   "scripts": {
+    "lint": "eslint lib",
     "prettier:check": "prettier-eslint --list-different '{spec,lib}/**/*.js'",
     "prettier:fix": "prettier-eslint --write '{spec,lib}/**/*.js'"
   }

@@ -17,7 +17,7 @@ yarn global add open-in-atom-cli
 
 > (Alternatively, you can just copy the shell script [`open-in-atom`](https://github.com/rstacruz/open-in-atom-cli/blob/master/bin/open-in-atom) to your PATH.)
 
-Then install the companion atom plugin, [open-in-atom](https://atom.io/packages/open-in-atom):
+Then install the companion Atom package, [open-in-atom](https://atom.io/packages/open-in-atom):
 
 ```sh
 apm install open-in-atom

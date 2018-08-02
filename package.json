@@ -1,13 +1,10 @@
 {
   "name": "open-in-atom",
-  "main": "./lib/index",
-  "version": "0.0.0",
   "description": "Open a file in Atom from the terminal without lag",
-  "keywords": [],
-  "repository": "https://github.com/atom/open-in-atom",
-  "license": "MIT",
-  "engines": {
-    "atom": ">=1.0.0 <2.0.0"
+  "version": "0.0.0",
+  "author": "Rico Sta. Cruz <rstacruz@users.noreply.github.com>",
+  "bugs": {
+    "url": "https://github.com/atom/open-in-atom/issues"
   },
   "dependencies": {
     "babel-eslint": "^8.2.6",
@@ -20,6 +17,23 @@
   "devDependencies": {
     "prettier-eslint-cli": "^4.7.1",
     "standard": "^11.0.1"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/atom/open-in-atom#readme",
+  "keywords": [
+    "atom",
+    "cli"
+  ],
+  "license": "MIT",
+  "main": "./lib/index",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atom/open-in-atom.git"
   },
   "scripts": {
     "lint": "eslint lib",

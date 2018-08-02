@@ -33,7 +33,7 @@
   "main": "./lib/index",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rstacruz/open-in-atom.git"
+    "url": "https://github.com/rstacruz/open-in-atom.git"
   },
   "scripts": {
     "lint": "eslint lib",

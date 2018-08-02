@@ -1,7 +1,7 @@
 {
   "name": "open-in-atom-pkg",
   "description": "Open a file in Atom from the terminal without lag",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": "Rico Sta. Cruz <rstacruz@users.noreply.github.com>",
   "bugs": {
     "url": "https://github.com/rstacruz/open-in-atom/issues"
